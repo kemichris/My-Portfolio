@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+/* styling for the navbar  */
+
+nav {
+    background-color: #2A208F;
+    height: 6rem;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.logo-img {
+    margin-right: 20rem;
+}
+
+.list {
+    margin-right: 2.5rem;
+}
+/* end of styling for the nav bar  */
+
+/* styling for the top container  */
+
+.top-container {
+    width: 100%;
+    background-image: url("/images/backgroud-header.png");
+    background-size: cover;
+    height: 20rem;
+    padding: 9rem 9rem;
+}
+
+.top-container h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.top-container h2 {
+    font-size: 4.75rem;
+    color: #2A208F;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.top-container p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    word-spacing: 0.3rem;
+    margin-top: 1rem;
+}
+
+.top-container button {
+    padding: 0.8rem 1.4rem;
+    background-color: #2A208F;
+    color: white;
+    font-size: 1.188rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* end of styling for the top container  */
+
+/* Styling for the about me section  */
+
+.about-container {
+    margin: 8rem 5rem;
+}
+
+.about-container h3, .services-container h3, .project-container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* color: #2A208F; */
+}
+
+.img-and-text {
+    display: flex;
+    background-color:#F8F8F8;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+
+.paragraph-container {
+    margin-left: 5rem;
+}
+
+.paragraph-container p {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2.5rem;
+    text-align: justify;
+    font-weight: 500;
+    /* color: #2A208F; */
+}
+
+.paragraph-container button {
+    background-color: #2A208F;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 3rem;
+}
+/* end of styling for about me  */
+
+/* styling for services section  */
+
+.services-container {
+    margin: 0 5rem;
+}
+
+.service-flex{
+    display: flex;
+    background-color:#F8F8F8;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* justify-content: center; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+
+.service-flex h4 {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.frontend-dev {
+    margin-right: 8rem;
+}
+
+.frontend-dev ul {
+    list-style: square;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+    color: #2A208F;
+    font-weight: 700;
+}
+
+.solidity-programming p {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    color: #2A208F;
+    font-weight: 700;
+}
+/* end of styling for services section  */
+
+/* styling for project section  */
+
+.project-container {
+    margin: 8rem 5rem;
+}
+
+.project {
+    display: flex;
+    background-color:#F8F8F8;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    margin-bottom: 3rem;
+}
+
+.project img {
+    margin-right: 4rem;
+}
+
+.project h4 {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.project p {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+    color: #2A208F;
+}
+
+.project i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.project button {
+    background-color: #2A208F;
+    font-size: 1.125rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+.project button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
