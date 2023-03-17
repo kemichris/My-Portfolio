@@ -3,16 +3,24 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    background-color: #1E202A;
     /* font-family: 'Montserrat', sans-serif; */
 }
 /* styling for the navbar  */
 
 nav {
-    background-color: #2A208F;
-    height: 6rem;
+    background-color: rgb(31, 33, 46);
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 nav ul {
+    justify-content: space-between;
+}
+
+nav ul, nav ul div {
     display: flex;
     margin: 0;
     list-style-type: none;
@@ -24,14 +32,28 @@ nav ul li a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.logo-img {
+.nav-list:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+.logo-img  {
     margin-right: 20rem;
+    cursor: pointer;
+    
 }
 
-.list {
+.logo-img img {
+    width: 6.313rem;
+    height: 4.188rem;
+}
+
+.nav-list {
     margin-right: 2.5rem;
 }
 /* end of styling for the nav bar  */
@@ -40,41 +62,67 @@ nav ul li a {
 
 .top-container {
     width: 100%;
-    background-image: url("/images/backgroud-header.png");
+    background-image: url("/images/background2.jpg");
     background-size: cover;
-    height: 20rem;
-    padding: 9rem 9rem;
+    height: 39rem;
+    /* padding: 9rem 9rem; */
+}
+
+.top-content {
+    background-color: #1E202A;
+    opacity: 0.9;
+    width: inherit;
+    height: 11;
+    padding: 14rem 9rem;
+    
+}
+
+.top-container .hello {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-container h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: white;
 }
 
-.top-container h2 {
-    font-size: 4.75rem;
-    color: #2A208F;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-}
-
-.top-container p {
-    font-family: 'Playfair Display', serif;
+.small-p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    word-spacing: 0.3rem;
     margin-top: 1rem;
+    color: hsl(228, 12%, 44%);
 }
 
 .top-container button {
     padding: 0.8rem 1.4rem;
-    background-color: #2A208F;
-    color: white;
-    font-size: 1.188rem;
+    background-color: #9B833E;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-container button a {
+    color: white;
+    font-size: 1.188rem;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.top-container button:hover {
+    background-color: transparent;
+    border-top: 2px solid #aa9554;
+    border-bottom: 2px solid #aa9554;
+    font-weight: bold;
+    
 }
 /* end of styling for the top container  */
 
@@ -84,45 +132,42 @@ nav ul li a {
     margin: 8rem 5rem;
 }
 
-.about-container h3, .services-container h3, .project-container h3 {
+.about-container h3, .services-container h3, .project-container h3, .skills-container h3, .review-container h3 {
     font-size: 2rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    margin-bottom: 1rem;
-    /* color: #2A208F; */
+    margin-bottom: 2.5rem;
+    color: #9B833E;
 }
 
 .img-and-text {
     display: flex;
-    background-color:#F8F8F8;
-    align-items: center;
-    padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    justify-content: center;
+    box-shadow: 0 4px 8px hsl(228, 12%, 44%, .3);
 }
 
 .paragraph-container {
-    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
 .paragraph-container p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: rgb(252, 249, 249);
     font-family: 'Lato', sans-serif;
     line-height: 2.5rem;
-    text-align: justify;
     font-weight: 500;
-    /* color: #2A208F; */
+    text-align: center;
 }
 
-.paragraph-container button {
-    background-color: #2A208F;
-    padding: 0.5rem 1rem;
-    color: white;
-    font-size: 1.125rem;
-    border: none;
-    border-radius: 0.3rem;
-    margin-top: 3rem;
+.paragraph-container i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: rgb(252, 249, 249);
 }
 /* end of styling for about me  */
 
@@ -132,21 +177,21 @@ nav ul li a {
     margin: 0 5rem;
 }
 
-.service-flex{
+.service-flex, .skills-flex {
     display: flex;
-    background-color:#F8F8F8;
+    background-color:#252A41;
     padding: 2rem;
     border-radius: 1rem;
-    /* justify-content: center; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    /* box-shadow: 0 4px 8px hsl(228, 12%, 44%, .3); */
 }
 
-.service-flex h4 {
+.service-flex h4, .skills-flex h4 {
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
+    color: white;
 }
 
-.frontend-dev {
+.frontend-dev{
     margin-right: 8rem;
 }
 
@@ -155,14 +200,14 @@ nav ul li a {
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
-    color: #2A208F;
+    color: hsl(228, 12%, 44%);
     font-weight: 700;
 }
 
 .solidity-programming p {
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
-    color: #2A208F;
+    color: hsl(228, 12%, 44%);
     font-weight: 700;
 }
 /* end of styling for services section  */
@@ -175,11 +220,11 @@ nav ul li a {
 
 .project {
     display: flex;
-    background-color:#F8F8F8;
+    background-color:#252A41;
     padding: 2rem;
     border-radius: 1rem;
     margin: 0 10rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 8px hsl(228, 12%, 44%, .3);
     margin-bottom: 3rem;
 }
 
@@ -190,27 +235,58 @@ nav ul li a {
 .project h4 {
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
+    color: rgb(228, 186, 186);
+    margin-bottom: 1rem;
 }
 
 .project p {
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
-    color: #2A208F;
+    color: white;
+    margin-top: 0;
 }
 
-.project i {
+.project ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.project ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    color: #9B833E;
+
+}
+
+ .project .list {
+    border-right: 2px solid #9B833E;
+}
+
+.git-site {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.project  i {
     font-size: 1.5rem;
     margin-right: 1rem;
+    color: #9B833E;
 }
 
 .project button {
-    background-color: #2A208F;
+    background-color: #9B833E;
     font-size: 1.125rem;
+    font-weight: bold;
     padding: 0.3rem 1rem;
     border-radius: 0.3rem;
     border: none;
-    margin-bottom: 0.5rem;
+    transition: 0.5s;
 }
 
 .project button a {
@@ -218,3 +294,159 @@ nav ul li a {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
+
+.project button:hover {
+    background-color: transparent;
+    border-top: 2px solid #aa9554;
+    border-bottom: 2px solid #aa9554;
+    font-weight: lighter;
+}
+/* end of styling for the project section  */
+
+/* styling for the skills section  */
+
+.skills-container {
+    margin: 0 5rem;
+}
+
+.programming-lang, .frameworks  {
+    margin-right: 4rem;
+    padding-right: 4rem;
+    border-right: 2px solid  hsl(228, 12%, 44%);
+}
+
+/* rgb(228, 186, 186) */
+.skills-flex {
+    justify-content: center;
+}
+
+.skills-flex ul {
+    list-style: square;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+/* end of styling for skills section  */
+
+/* styling for review section */
+
+.review-container {
+    margin: 8rem 5rem;
+}
+
+.review-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.review-1, .review-2 {
+    background-color:#252A41;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30%;
+    /* box-shadow: 0 4px 8px hsl(228, 12%, 44%, .3); */
+}
+
+.review-1 {
+    margin-right: 3rem;
+}
+
+.review-1 p, .review-2 p {
+    font-size: 1.2rem;
+    color: rgb(228, 186, 186);
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+}
+
+.review-1 small, .review-2 small {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+/* end of styling for review  */
+
+/* styling for the call to action  */ 
+
+.call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20rem 8rem 20rem;
+    background-color:#252A41;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px hsl(228, 12%, 44%, .3);
+}
+
+.call-container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: rgb(228, 186, 186);
+}
+
+.call-container p {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    width: 60%;
+    margin-top: 0;
+}
+
+.call-container button {
+    background-color: #9B833E;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.call-container button a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.124rem;
+}
+
+.call-container button:hover {
+    background-color: transparent;
+    border-top: 2px solid rgb(228, 186, 186);
+    border-bottom: 2px solid rgb(228, 186, 186);
+}
+/* end of styling for the call container  */
+
+/* styling for footer section  */
+
+footer {
+    background-color: #252A41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+footer p, footer small  {
+    font-family: 'Lato', sans-serif;
+    color: rgb(228, 186, 186);
+    margin: 0;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: rgb(252, 249, 249);
+}
+
+footer i:hover {
+    color: #9B833E;
+}
+

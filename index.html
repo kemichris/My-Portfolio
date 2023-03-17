@@ -18,27 +18,21 @@
                 <li>
                     <a class="logo-img" href="index.html"><img src="images/logo.png" alt=""></a>
                 </li>
-                <li>
-                    <a class="list" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="list" href="">About Me</a>
-                </li>
-                <li>
-                    <a class="list" href="">My Services</a>
-                </li>
-                <li>
-                    <a class="list" href="">Previous projects</a>
-                </li>
-                <li>
-                    <a class="list" href="">My Skills</a>
-                </li>
-                <li>
-                    <a class="list" href="">Testimonials</a>
-                </li>
-                <li>
-                    <a href="">Contact Me</a>
-                </li>
+                <div class="div">
+                    <li>
+                        <a class="nav-list" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="nav-list" href="">My Services</a>
+                    </li>
+                    <li>
+                        <a class="nav-list" href="">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-list" href="">Contact Me</a>
+                    </li>
+                </div>
+                
             </ul>
         </nav>
     </header>
@@ -46,18 +40,19 @@
         <!-- home section -->
 
         <div class="top-container">
-            <h1>Hello, I am</h1>
-            <h2>Kemi Chris</h2>
-            <p>A frontend web developer</p>
-            <button>DOWNLOAD RESUME</button>
+           <div class="top-content">
+                <p class="hello">Hello, I am</p>
+                <h1>Kemi Chris</h1>
+                <p class="small-p">A frontend web developer</p>
+                <button><a href="https://drive.google.com/file/d/1wwOOh50FcQ_he-Ivpe8nZZLUZzgfxzZw/view?usp=sharing" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME</a></button>
+           </div>
         </div>
 
         <!-- About section -->
 
-        <div class="about-container">
+        <div id="about" class="about-container">
             <h3>About Me</h3>
             <div class="img-and-text">
-                <img src="images/Rectangle 3.png" alt="">
                 <div class="paragraph-container">
                     <p>My name is Ekemini Christopher, but I am mostly called Kemi Chris for short. 
                         I am a fast rising and innovative frontend developer, 
@@ -68,7 +63,13 @@
                         and continous practice in other to improve continously and advance in this 
                         industry as this has helped me profide efficient solution to challenges.
                     </p>
-                    <button>Follow on Twitter</button>
+                    <div class="icons">
+                        <a href="https://wa.link/stnizq" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/kemi_chris1/?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/kemichris1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +99,7 @@
         <!-- project section  -->
 
         <div class="project-container">
-            <h3>Previous Projects</h3>
+            <h3>My Projects</h3>
             <div class="project">
                 <img src="images/project1.png" alt="">
                 <div class="project-1-text">
@@ -106,8 +107,15 @@
                     <p>A responsive card details form that takes user input and displays on card, 
                         a challenge gotten from Frotend-Mentor.
                     </p>
-                    <i class="fa-brands fa-github"></i>
-                    <button><a href="">Visit site</a></button>
+                    <ul>
+                        <li class="list">HTML</li>
+                        <li class="list">CSS</li>
+                        <li>javaScript</li>
+                    </ul>
+                    <div class="git-site">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <button><a href="">Visit site</a></button>
+                    </div>
                 </div>
             </div>
             <div class="project">
@@ -115,19 +123,33 @@
                 <div class="project-2-text">
                     <h4>Rating Section</h4>
                     <p>Rating section of a page that allows users gives ratings and feedback, 
-                        a challenge from Frontedn-Mentor.
+                        a challenge from Frontend-Mentor.
                     </p>
-                    <i class="fa-brands fa-github"></i>
-                    <button><a href="">Visit site</a></button>
+                    <ul>
+                        <li class="list">HTML</li>
+                        <li class="list">CSS</li>
+                        <li>javaScript</li>
+                    </ul>
+                    <div class="git-site">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <button><a href="">Visit site</a></button>
+                    </div>
                 </div>
             </div>
             <div class="project">
                 <img src="images/project3.png" alt="">
                 <div class="project-3-text">
                     <h4>Social media dashboard</h4>
-                    <p>A social media dashboard with dask theme effect, a challenge from Frontedn-Mentor</p>
-                    <i class="fa-brands fa-github"></i>
-                    <button><a href="">Visit site</a></button>
+                    <p>A social media dashboard with dask theme effect, a challenge from Frontend-Mentor</p>
+                    <ul>
+                        <li class="list">HTML</li>
+                        <li class="list">CSS</li>
+                        <li>javaScript</li>
+                    </ul>
+                    <div class="git-site">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <button><a href="">Visit site</a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,21 +220,21 @@
                 Let's work together! Click the button below and let's bring your 
                 dreams to reality.
             </p>
-            <button>Get in touch</button>
+            <button><a href="mailto:ekeminichristopher123@gmail.com" target="_blank" rel="noopener noreferrer">Get in touch</a></button>
         </div>
     </main>
 
      <!-- footer secetion  -->
      <footer>
-        <a href="https://wa.link/stnizq" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
-        <a href="https://www.instagram.com/kemi_chris1/?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href="https://twitter.com/kemichris1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <p>Designed and Developed by Kemi Chris</p>
         <div class="dev-flex">
-            <p>Designed and Developed by Kemi Chris</p>
-            <small>©Kemi Chris 2023</small>
+            <a href="https://wa.link/stnizq" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.instagram.com/kemi_chris1/?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/kemichris1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
         </div>
+        <small>©Kemi Chris 2023</small>
     </footer>
     
 </body>
