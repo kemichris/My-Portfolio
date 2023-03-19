@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #1E202A;
+    box-sizing: border-box;
     /* font-family: 'Montserrat', sans-serif; */
 }
 /* styling for the navbar  */
@@ -75,8 +76,7 @@ nav ul li a {
     opacity: 0.9;
     width: inherit;
     height: 11;
-    padding: 14rem 9rem;
-    
+    padding: 14rem  0; 
 }
 
 .top-container .hello {
@@ -88,9 +88,14 @@ nav ul li a {
     font-family: 'Montserrat', sans-serif;
 }
 
+.top-container .hello, .top-container h1, .small-p, .top-container button {
+    margin-left: 9rem;
+}
+
 .top-container h1 {
     font-size: 4.5rem;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     color: white;
@@ -550,7 +555,7 @@ footer i:hover {
 
 @media (max-width:900px) {
     .top-content {
-        padding: 15rem 9rem;
+        padding: 15rem 0;
     }
 
     .top-container .hello {
@@ -568,6 +573,8 @@ footer i:hover {
     .top-container button {
         padding: 0.3rem 0.8rem;
     }
+
+    
 
     .project img {
         width: 17.75rem;
@@ -732,6 +739,11 @@ footer i:hover {
 }
 
 @media (max-width:535px) {
+
+    .top-container .hello, .top-container h1, .small-p, .top-container button {
+        margin-left: 6rem;
+    }
+
     .project {
         display: block;
     }
@@ -753,7 +765,7 @@ footer i:hover {
 
 @media (max-width:450px) {
     .top-content {
-        padding: 15rem 6rem;
+        padding: 15rem 0 ;
     }
 
     .top-container .hello {
@@ -784,8 +796,16 @@ footer i:hover {
 }
 
 @media (max-width:415px) {
+    /* .logo-img  {
+        margin-right: 5rem;
+    } */
+
     .top-content {
-        padding: 17rem 3rem;
+        padding: 17rem 0;
+    }
+
+    .top-container .hello, .top-container h1, .small-p, .top-container button {
+        margin-left: 5rem;
     }
 
     .top-container .hello {
