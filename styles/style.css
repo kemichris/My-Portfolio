@@ -65,10 +65,9 @@ nav ul li a {
 
 .top-container {
     width: 100%;
-    background-image: url("/images/background2.jpg");
+    background-image: url("../images/background2.jpg");
     background-size: cover;
     height: 39rem;
-    /* padding: 9rem 9rem; */
 }
 
 .top-content {
