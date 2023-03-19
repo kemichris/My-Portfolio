@@ -624,7 +624,7 @@ footer i:hover {
         padding-top: 10rem;
         z-index: 1;
         background-color:rgb(31, 33, 46);
-        transition: 0.5s;
+        /* transition: 0.5s; */
     }
 
     .mobile-nav a {
@@ -640,7 +640,7 @@ footer i:hover {
     }
 
     .active.mobile-nav {
-        width: 0;
+        /* width: 0; */
         visibility: hidden;
     }
 
