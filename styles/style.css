@@ -99,7 +99,7 @@ nav ul li a {
 
 .small-p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     color: hsl(228, 12%, 44%);
 }
@@ -486,7 +486,7 @@ footer i:hover {
     }
 
     .small-p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .top-container button {
@@ -563,7 +563,7 @@ footer i:hover {
     }
 
     .small-p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .top-container button {
@@ -573,6 +573,24 @@ footer i:hover {
     .project img {
         width: 17.75rem;
         height: 23.25rem;
+    }
+
+    .review-1, .review-2 {
+        width: 50%;
+    }
+
+    .review-1 {
+        margin-right: 1.5rem;
+    }
+    
+    .review-1 p, .review-2 p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    footer i {
+        font-size: 1rem;
+        margin-right: 0.7rem;
     }
 }
 
@@ -651,4 +669,185 @@ footer i:hover {
 
 }
 
+@media (max-width:708px) {
+    .paragraph-container p {
+        font-size: 1rem;
+    }
+
+    .paragraph-container i {
+        font-size: 1rem;
+
+    }
+
+    .service-flex, .skills-flex {
+        display: block;
+    }
+    .frontend-dev{
+        margin-right: 0;
+    }
+
+    .programming-lang, .frameworks  {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .project img {
+        width: 10.75rem;
+        height: 16.25rem;
+        margin-right: 2rem;
+    }
+
+    footer i {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem 1rem;
+    }
+    
+    footer p  {
+        font-size: 0.7rem;
+    }
+
+    footer small {
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media (max-width:650px) {
+    .about-container, .services-container, .project-container, .skills-container, .review-container {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .about-container h3, .services-container h3, .project-container h3, .skills-container h3, .review-container h3, .call-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .call-container {
+        margin: 0 7rem 8rem 7rem;
+    }
+}
+
+@media (max-width:535px) {
+    .project {
+        display: block;
+    }
+    
+    .project img {
+        width: 100%;
+        margin: 0;
+        height: 16.25rem;
+    }
+
+    .review-1, .review-2 {
+        padding: 1rem;
+    }
+
+    .review-1 {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+    .top-content {
+        padding: 15rem 6rem;
+    }
+
+    .top-container .hello {
+        font-size: 1rem;
+    }
+
+    .top-container h1 {
+        font-size: 3rem;   
+    }
+
+    .small-p {
+        font-size: 1rem;
+    }
+
+    .top-container button {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .call-container {
+        margin: 0 5rem 8rem 5rem;
+        padding: 1rem;
+    }
+
+    .service-flex, .skills-flex, .project {
+        padding: 1rem;
+    }
+    
+}
+
+@media (max-width:415px) {
+    .top-content {
+        padding: 17rem 3rem;
+    }
+
+    .top-container .hello {
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .top-container h1 {
+        font-size: 2.5rem;   
+    }
+
+    .small-p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .top-container button a {
+        font-size: 0.8rem;
+    }
+
+    .paragraph-container {
+        padding: 1rem;
+    }
+
+    .call-container button {
+        margin-top: 0.5rem;
+    }
+
+    .call-container button a {
+        font-size: 0.8rem;
+    }
+
+    footer i {
+        font-size: 0.5rem;
+        margin-right: 0.2rem;
+    }
+
+    footer {
+        padding: 0.5rem 1rem;
+    }
+    
+    footer p  {
+        font-size: 0.5rem;
+    }
+
+    footer small {
+        font-size: 0.3rem;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .about-container, .services-container, .project-container, .skills-container, .review-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .call-container {
+        margin: 0 3rem 8rem 3rem;
+        padding: 1rem;
+    }
+}
 
