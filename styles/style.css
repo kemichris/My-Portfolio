@@ -216,6 +216,7 @@ nav ul li a {
     font-family: 'Lato', sans-serif;
     color: hsl(228, 12%, 44%);
     font-weight: 700;
+    margin-left: 2rem;
 }
 /* end of styling for services section  */
 
